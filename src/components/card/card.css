@@ -1,0 +1,12 @@
+.menuContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .menuContainer {
+        grid-template-columns: 1fr;
+    }
+}
