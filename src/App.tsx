@@ -24,6 +24,14 @@ function App() {
                         <List key={menuItem.id} {...menuItem} />
                     ))}
             </div>
+            <h3>Dessert</h3>
+            <div className="menuContainer">
+                {menu
+                    .filter((item) => item.category === "Dessert")
+                    .map((menuItem) => (
+                        <List key={menuItem.id} {...menuItem} />
+                    ))}
+            </div>
         </div>
     );
 }
